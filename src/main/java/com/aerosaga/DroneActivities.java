@@ -14,4 +14,7 @@ public interface DroneActivities {
 
     @ActivityMethod
     void deliverPackage();
+
+    @ActivityMethod
+    void returnToBase();
 }

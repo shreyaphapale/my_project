@@ -16,7 +16,15 @@ public class DroneActivitiesImpl implements DroneActivities {
 
     @Override
     public void deliverPackage() {
-        System.out.println("Drone is delivering the package...");
-        System.out.println("Package delivered successfully!");
+        System.out.println("Drone is attempting package delivery...");
+        throw new
+        RuntimeException("Package delivered failed!");
     }
+
+    @Override
+     public void returnToBase() {
+    System.out.println("Package delivery failed!");
+    System.out.println("Drone is returning to base...");
+    System.out.println("Drone successfully returned to base!");
+}
 }
