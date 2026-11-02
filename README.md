@@ -71,3 +71,17 @@ The worker and mission starter should run from the project root directory.
 **Week 1 completed:** Local Temporal setup and simulated drone takeoff workflow.
 
 Further features are planned for subsequent development phases.
+
+## Week 3 – Saga Compensation Mechanism
+
+Implemented Temporal Saga compensation logic to handle
+package delivery failures.
+
+### Features
+- Added Return-to-Base activity.
+- Configured activity retry attempts.
+- Registered compensation actions.
+- Simulated package delivery failure.
+- Added recovery logic to return the drone to base.
+
+This feature improves mission failure handling and recovery.
